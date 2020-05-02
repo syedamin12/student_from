@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    
+</head>
+<body>
+<div class="container">
+			
+            
+			<header>
+				<h1> <span><img src="images/Saylani-logo.png" alt=""></span> Student Registration Form</h1>
+            </header>       
+      <div  class="form">
+    		<form action="submit.html" id="contactform"> 
+    			<p class="contact"><label for="fname">First Name</label></p> 
+                <input id="fname" name="name" placeholder="First name" required="" tabindex="1" type="text" maxlength="20">
+                <p class="contact"><label for="lname">Last Name</label></p> 
+    			<input id="lname" name="name" placeholder="last name" required="" tabindex="1" type="text" maxlength="20">
+    			 
+        
+               <fieldset>
+                 <label>Birthday</label>
+                  <label class="month"> 
+                  <select class="select-style" name="BirthMonth">
+                  <option value="">Month</option>
+                  <option  value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03" >March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12" >December</option>
+                  </label>
+                 </select>    
+                <label>Day<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day" required=""></label>
+                <label>Year <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year" required=""></label>
+              </fieldset>
+              <p class="contact"><label for="email">Email</label></p> 
+                <input id="email" name="email" placeholder="info@example.com" required="" type="email" maxlength="40">
+                <p class="contact"><label for="phone">Mobile phone</label></p> 
+            <input id="phone" name="phone" placeholder="phone number" required="" type="text"> <br> 
+  
+            <select class="select-style gender" name="gender">
+            <option value="select">i am..</option>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="others">Other</option>
+            </select><br><br>
+            <p class="contact"><label for="address">Address</label></p>
+            <textarea name="Address" id="address" cols="58" rows="4"></textarea><br><br>
+
+            <p class="contact"><label for="city">City</label></p> 
+                <input id="lname" name="city" placeholder="Type City" required="" tabindex="1" type="text" maxlength="20">
+                <p class="contact"><label for="pcode">Pin Code</label></p> 
+                <input id="lname" name="pcode" placeholder="Pin Code" required="" tabindex="1" type="text" maxlength="20">
+                <p class="contact"><label for="state">State</label></p> 
+                <input id="lname" name="state" placeholder="Type State" required="" tabindex="1" type="text" maxlength="20">
+                <p class="contact"><label for="country">Country</label></p> 
+    			<input id="lname" name="country" placeholder="Type Country" required="" tabindex="1" type="text" maxlength="20">
+            
+                <tr>
+                    <br>
+                    <td>HOBBIES <br /><br /></td>
+                     
+                    <td>
+                    Drawing
+                    <input type="checkbox" name="Hobby_Drawing" value="Drawing" />
+                    Singing
+                    <input type="checkbox" name="Hobby_Singing" value="Singing" />
+                    Dancing
+                    <input type="checkbox" name="Hobby_Dancing" value="Dancing" />
+                    Sketching
+                    <input type="checkbox" name="Hobby_Cooking" value="Cooking" />
+                    <br />
+                    Others
+                    <input type="checkbox" name="Hobby_Other" value="Other">
+                    <input type="text" name="Other_Hobby" placeholder="Otherr_Hobby" maxlength="30" style="width: 390px;" />
+                    </td>
+                    </tr>
+
+                    <table>
+                        <br>
+                        <label for="qualification">QUALIFICATION</label><br><br>
+ 
+                        <tr>
+                        <td align="center" style="padding-bottom: 10px;"><b>Exam</b></td>
+                        <td align="center"style="padding-bottom: 10px;"><b>Board</b></td>
+                        <td align="center"style="padding-bottom: 10px;"><b>Percentage</b></td>
+                        <td align="center"style="padding-bottom: 10px;"><b>Year of Passing</b></td>
+                        
+                        </tr>
+                         
+                        <tr>
+                           
+                        <td>Class X</td>
+                        <td><input type="text" name="ClassX_Board" placeholder="Board" maxlength="30" style="width: 120px; padding: 5px;" required="" /></td>
+                        <td><input type="text" name="ClassX_Percentage" placeholder="Percentage" maxlength="30" style="width: 120px;padding: 5px;" required="" /></td>
+                        <td><input type="text" name="ClassX_YrOfPassing" placeholder="passing year" maxlength="30" style="width: 120px;padding: 5px;"required=""  /></td>
+                        </tr>
+                         
+                        <tr>
+                        
+                        <td>Class XII</td>
+                        <td><input type="text" name="ClassXII_Board" placeholder="Board"  maxlength="30" style="width: 120px;padding: 5px;"required=""  /></td>
+                        <td><input type="text" name="ClassXII_Percentage" placeholder="Percentage"  maxlength="30"style="width: 120px;padding: 5px;"required=""  /></td>
+                        <td><input type="text" name="ClassXII_YrOfPassing" placeholder="passing year"  maxlength="30"style="width: 120px;padding: 5px;"required=""  /></td>
+                        </tr>
+                         
+                        <tr>
+                        
+                        <td>Graduation</td>
+                        <td><input type="text" name="Graduation_Board"  placeholder="Board" maxlength="30" style="width: 120px;padding: 5px;"required="" /></td>
+                        <td><input type="text" name="Graduation_Percentage" placeholder="Percentage"  maxlength="30"style="width: 120px;padding: 5px;"required=""  /></td>
+                        <td><input type="text" name="Graduation_YrOfPassing"  placeholder="passing year" maxlength="30"style="width: 120px;padding: 5px;" required="" /></td>
+                        
+                        </tr>
+                         
+                        <tr>
+                        
+                        <td>Masters</td>
+                        <td><input type="text" name="Masters_Board" placeholder="Board"  maxlength="30" style="width: 120px;padding: 5px;"required="" /></td>
+                        <td><input type="text" name="Masters_Percentage" placeholder="Percentage"  maxlength="30" style="width: 120px;padding: 5px;"required="" /></td>
+                        <td><input type="text" name="Masters_YrOfPassing" placeholder="passing year"  maxlength="30" style="width: 120px;padding: 5px;"required="" /></td>
+                        </tr>
+                         
+                       
+                        </table>
+                        <br><br>
+                         <tr>
+                            <label style="margin-right: 25px;">COURSES<br />APPLIED FOR</label>
+                            <td>
+                            BCA
+                            <input type="radio" name="Course_BCA" value="BCA">
+                            B.Com
+                            <input type="radio" name="Course_BCom" value="B.Com">
+                            B.Sc
+                            <input type="radio" name="Course_BSc" value="B.Sc">
+                            B.A
+                            <input type="radio" name="Course_BA" value="B.A">
+                        
+                            </td>
+                            </tr>
+                            <br><br>
+            
+            <input class="buttom" name="submit" id="submit" tabindex="5" value="Submit" type="submit"> 	 
+            <input class="buttom" name="reset" id="reset" tabindex="6" value="reset" type="reset"> 
+   </form> 
+</div>      
+</div>
+<footer>
+<h2>Name : Syed Amin Hussain</h2>
+<h3>Roll No : WM11083</h3>
+
+</footer>
+
+</body>
+</html>
